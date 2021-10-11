@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:layout_marginTop="40dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,7 +16,12 @@
         android:text="CALCULATOR"
         android:textSize="40dp"
         android:padding="20dp"
+        android:textColor="@color/purple_700"
         />
+
+
+
+
 
     <TextView
         android:id="@+id/result"
@@ -29,8 +35,9 @@
         android:background="#70F4F1F1"
         android:backgroundTint="#5A5A5A"
         android:gravity="center"
-        android:hint="Result"
+        android:text=""
         android:textSize="30dp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,6 +46,7 @@
         android:orientation="horizontal"
         android:layout_margin="15dp"
         android:id="@+id/firstRow"
+
         >
 
         <Button
@@ -47,7 +55,10 @@
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="7" />
+            android:text="7"
+            android:onClick="seven"
+
+            />
 
         <Button
             android:layout_marginHorizontal="5dp"
@@ -55,21 +66,27 @@
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="8"/>
+            android:text="8"
+            android:onClick="eight"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/num9"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="9"/>
+            android:text="9"
+            android:onClick="nine"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/div"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="/"/>
+            android:text="/"
+            android:onClick="division"
+            />
 
     </LinearLayout>
 
@@ -88,28 +105,36 @@
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="4" />
+            android:text="4"
+            android:onClick="four"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/num5"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="5"/>
+            android:text="5"
+            android:onClick="five"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/num6"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="6"/>
+            android:text="6"
+            android:onClick="six"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/dec"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="-"/>
+            android:text="-"
+            android:onClick="dec"
+            />
 
     </LinearLayout>
 
@@ -128,28 +153,36 @@
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="4" />
+            android:text="1"
+            android:onClick="one"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/num2"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="5"/>
+            android:text="2"
+            android:onClick="two"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/num3"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="6"/>
+            android:text="3"
+            android:onClick="three"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/sum"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="-"/>
+            android:text="+"
+            android:onClick="sum"
+            />
 
     </LinearLayout>
 
@@ -164,11 +197,23 @@
 
         <Button
             android:layout_marginHorizontal="5dp"
+            android:id="@+id/num0"
+            android:layout_width="0dp"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:onClick="zero"
+            />
+
+        <Button
+            android:layout_marginHorizontal="5dp"
             android:id="@+id/equal"
             android:layout_width="0dp"
             android:layout_height="82dp"
-            android:layout_weight="2"
-            android:text="=" />
+            android:layout_weight="1"
+            android:text="="
+            android:onClick="doResult"
+            />
 
         <Button
             android:layout_marginHorizontal="5dp"
@@ -176,14 +221,18 @@
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="6"/>
+            android:text="AC"
+            android:onClick="clear"
+            />
         <Button
             android:layout_marginHorizontal="5dp"
             android:id="@+id/mult"
             android:layout_width="0dp"
             android:layout_height="82dp"
             android:layout_weight="1"
-            android:text="-"/>
+            android:text="x"
+            android:onClick="multi"
+            />
 
     </LinearLayout>
 
