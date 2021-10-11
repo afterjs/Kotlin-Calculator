@@ -11,5 +11,4 @@ Some initial photos of the project:
 
 
 
-![XML Layout]
-(/Assets/xml.png)
+![](Assets/xml.png)
