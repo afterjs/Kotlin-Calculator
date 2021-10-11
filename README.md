@@ -8,10 +8,10 @@ This was my first contact with mobile programming using Kotlin. The calc is basi
 
 Some initial photos of the project:
 
-
-
-
-
-<img src="/Assets/mobile1.jpg" width="150" heigth="300">
-<img src="/Assets/mobile2.jpg" width="150" heigth="300">
-<img src="/Assets/xml.jpg" width="350" heigth="300">
+<table>
+  <tr>
+     <td> <img src="/Assets/mobile2.jpg" width="150" heigth="300"></td>
+      <td><img src="/Assets/mobile1.jpg" width="150" heigth="300"></td>
+      <img src="/Assets/xml.jpg" width="350" heigth="300"></td>
+  </tr>
+</table>
