@@ -11,4 +11,7 @@ Some initial photos of the project:
 
 
 
-![](Assets/xml.png)
+
+<img src="/Assets/mobile1.jpg" width="150" heigth="300">
+<img src="/Assets/mobile2.jpg" width="150" heigth="300">
+<img src="/Assets/xml.jpg" width="350" heigth="300">
